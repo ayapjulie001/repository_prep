@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link href="../qunit/qunit.css" rel="stylesheet"/>
+    <script src="../qunit/qunit.js"></script>
+    <script src="../../../../public/build/js/Libraries/libraries.js"></script>
+    <script src="../../../../public/build/js/Common/common.js"></script>
+    <script>
+        function test_file_upload_validation(assert) {
+            var data = {
+                'mime_type': 'image/jpeg',
+                'image_size': 100000
+            }
+
+            var validator = new FileUploadValidator();
+
+            assert.ok(validator.setRules(validator.rules).validate(data));
+        }
+
+        QUnit.test( "hello test", function( assert ) {
+
+            test_file_upload_validation(assert)
+
+        });
+    </script>
+</head>
+<body>
+
+</body>
+</html>

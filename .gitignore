@@ -1,0 +1,15 @@
+/.idea
+/bootstrap/compiled.php
+/vendor
+/front/bower_components
+/front/node_modules
+/public/build
+/public/uploads
+/public/temp
+_ide_helper.php
+composer.phar
+composer.lock
+.env.*.php
+.env.php
+.DS_Store
+Thumbs.db

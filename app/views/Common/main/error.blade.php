@@ -1,0 +1,1 @@
+<p>This is the error page for non ajax request</p>
